@@ -1,3 +1,8 @@
+{{ config (
+    materialized="table"
+)}}
+
+
 with customers as (
 
     select
@@ -53,4 +58,4 @@ final as (
 
 )
 
-select * from final;
+select * from final
